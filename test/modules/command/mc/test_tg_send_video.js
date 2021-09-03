@@ -1,7 +1,7 @@
 const chai = require("chai");
 
 const { expect } = chai;
-const { TgSendVideo } = require("../../../../src/modules/command/Mc/index");
+const { TgSendVideo } = require("../../../../src/modules/command/mc/index");
 
 describe("tg_send_video Test", () => {
   it("should return mc object", () => {

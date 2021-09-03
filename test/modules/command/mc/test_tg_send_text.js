@@ -1,7 +1,7 @@
 const chai = require("chai");
 
 const { expect } = chai;
-const { TgSendText } = require("../../../../src/modules/command/Mc/index");
+const { TgSendText } = require("../../../../src/modules/command/mc/index");
 
 describe("tg_send_text Test", () => {
   it("should return mc object", () => {

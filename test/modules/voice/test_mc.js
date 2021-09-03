@@ -11,7 +11,7 @@ const {
   Sleep
 } = require("../../../src/modules/voice/Mc/index");
 
-describe("Mc Test", () => {
+describe("mc Test", () => {
   it("should create a say mc", () => {
     let say = Mc.say();
     expect(say).to.be.instanceOf(Say);

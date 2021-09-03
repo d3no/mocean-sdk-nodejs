@@ -1,7 +1,7 @@
 const chai = require("chai");
 
 const { expect } = chai;
-const { TgSendAudio } = require("../../../../src/modules/command/Mc/index");
+const { TgSendAudio } = require("../../../../src/modules/command/mc/index");
 
 describe("tg_send_audio Test", () => {
   it("should return mc object", () => {

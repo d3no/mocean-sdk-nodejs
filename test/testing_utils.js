@@ -20,7 +20,9 @@ module.exports = {
     });
   },
   makeMockRequest(uri, method = "GET", version = "2") {
-    return nock("https://rest.moceanapi.com")
+    // TODO Remove test env URL and uncomment live URL
+    // return nock("https://rest.moceanapi.com")
+    return nock("https://api-staging.moceansms.com/")
       .intercept(`/rest/${version}${uri}`, method)
       .query(true)
       .once();

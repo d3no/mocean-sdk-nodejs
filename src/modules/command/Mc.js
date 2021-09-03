@@ -6,8 +6,17 @@ const {
   TgSendPhoto,
   TgSendText,
   TgSendVideo,
-  SendSMS
-} = require("./Mc/index");
+  SendSMS,
+  WaSendText,
+  WaSendAudio,
+  WaSendDocument,
+  WaSendPhoto,
+  WaSendVideo,
+  WaSendSticker,
+  WaSendContact,
+  WaSendLocation,
+  WaSendTemplate
+} = require("./mc/index");
 
 class Mc {
   static TgRequestContact() {
@@ -40,6 +49,42 @@ class Mc {
 
   static SendSMS() {
     return new SendSMS();
+  }
+
+  static WaSendText() {
+    return new WaSendText();
+  }
+
+  static WaSendAudio() {
+    return new WaSendAudio();
+  }
+
+  static WaSendDocument() {
+    return new WaSendDocument();
+  }
+
+  static WaSendPhoto() {
+    return new WaSendPhoto();
+  }
+
+  static WaSendSticker() {
+    return new WaSendSticker();
+  }
+
+  static WaSendVideo() {
+    return new WaSendVideo();
+  }
+
+  static WaSendContact() {
+    return new WaSendContact();
+  }
+
+  static WaSendLocation() {
+    return new WaSendLocation();
+  }
+
+  static WaSendTemplate() {
+    return new WaSendTemplate();
   }
 }
 

@@ -1,7 +1,9 @@
 const chai = require("chai");
 
 const { expect } = chai;
-const {TgRequestContact } = require("../../../../src/modules/command/Mc/index");
+const {
+  TgRequestContact
+} = require("../../../../src/modules/command/mc/index");
 
 describe("tg_request_contact Test", () => {
   it("should return mc object", () => {
@@ -12,16 +14,16 @@ describe("tg_request_contact Test", () => {
         id: "test id"
       },
       to: {
-          type: "chat_id",
-          id: "test id"
+        type: "chat_id",
+        id: "test id"
       },
       content: {
-          type: "text",
-          text: "test text"
+        type: "text",
+        text: "test text"
       },
       tg_keyboard: {
-          button_request: "contact",
-          button_text: "test button text"
+        button_request: "contact",
+        button_text: "test button text"
       }
     };
     let obj = new TgRequestContact(params);

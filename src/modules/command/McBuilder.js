@@ -1,4 +1,4 @@
-const AbstractMc = require("./Mc/AbstractMc");
+const AbstractMc = require("./mc/AbstractMc");
 
 class McBuilder {
   constructor() {

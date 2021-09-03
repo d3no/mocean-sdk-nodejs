@@ -1,23 +1,23 @@
 const chai = require("chai");
 
-const { expect } = chai;
-const { SendSMS } = require("../../../../src/modules/command/Mc/index");
+const {expect} = chai;
+const {SendSMS} = require("../../../../src/modules/command/mc/index");
 
 describe("send_sms Test", () => {
   it("should return mc object", () => {
-    const params = { 
+    const params = {
       action: "send-sms",
       from: {
-          type: "phone_num",
-          id: "test id"
+        type: "phone_num",
+        id: "test id"
       },
       to: {
-          type: "phone_num",
-          id: "test id"
+        type: "phone_num",
+        id: "test id"
       },
       content: {
-          type: "text",
-          text: "test text"
+        type: "text",
+        text: "test text"
       }
     };
     let obj = new SendSMS(params);
